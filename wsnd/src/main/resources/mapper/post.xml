@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxy.oa.dao.PostDao">
+    <select id="selectbyreleaseid" parameterType="Long" resultType="com.lxy.oa.entity.Release">
+        select * from sys_release where release_id=#{value}
+    </select>
+
+</mapper>

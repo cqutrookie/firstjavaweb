@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="wsnd:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/wsnd_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="wsnd/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="wsnd" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.7" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.25" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.2.6" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.31" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.5" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.5" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.31" />
+          <element id="library" level="project" name="Maven: com.novocode:junit-interface:0.11" />
+          <element id="library" level="project" name="Maven: org.scala-sbt:test-interface:1.0" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.78" />
+          <element id="library" level="project" name="commons-fileupload-1.4" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.6" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

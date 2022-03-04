@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="com.lxy.oa.datasource.DruidDataSourceFactory">
+                <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/wsnd-users?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=Asia/Shanghai&amp;allowPublicKeyRetrieval=true"/>
+                <property name="username" value="root"></property>
+                <property name="password" value="520Tshh520"></property>
+                <property name="initialSize" value="10"/>
+                <property name="maxActive" value="20"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mapper/user.xml"/>
+        <mapper resource="mapper/message.xml"/>
+        <mapper resource="mapper/guess.xml"/>
+        <mapper resource="mapper/odds.xml"/>
+        <mapper resource="mapper/hostmoney.xml"/>
+        <mapper resource="mapper/money.xml"/>
+        <mapper resource="mapper/mark.xml"/>
+        <mapper resource="mapper/udpassword.xml"/>
+        <mapper resource="mapper/udavatar.xml"/>
+        <mapper resource="mapper/release.xml"/>
+        <mapper resource="mapper/searchrelease.xml"/>
+        <mapper resource="mapper/homepage.xml"/>
+        <mapper resource="mapper/post.xml"/>
+    </mappers>
+</configuration>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxy.oa.dao.SearchreleaseDao">
+    <select id="searchrelease" resultType="com.lxy.oa.entity.Release">
+        select
+
+            release_id as releaseid,
+            gameid as gameid,
+            title as title,
+            content as content,
+            photo as photo,
+            release_time as releasetime,
+            user_id as userid
+        from sys_release
+    </select>
+
+</mapper>
